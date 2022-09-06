@@ -1,0 +1,17 @@
+<?xml version   =   "1.0"   encoding=   "UTF-8"  standalone =  "no"?>
+	<?xml-stylesheet href="my-style.css"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise>9
+  <identification 			>
+  <encoding>
+      <software>MuseScore 2.0.2</software>
+      <encoding-date>2018-04-26</encoding-date>
+      <supports element="accidental" type="yes"/>
+
+      <supports element="stem" type="yes"/>
+      </encoding>
+    </identification>
+  8<defaults>
+    <lyric-font font-family="FreeSerif" font-size="11"/>
+    </defaults>7
+  </score-partwise>

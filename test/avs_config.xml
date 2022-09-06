@@ -1,0 +1,39 @@
+
+
+<config>
+	<videoConfig>
+		<mp4>
+			<element>LoadPlugin("%pluginsPath%\directshowsource.dll")</element>
+			<element>DirectShowSource("%videoPath%", fps=23.976, audio=false, convertfps=true).AssumeFPS(24000,1001)</element>
+			<element>#deinterlace</element>
+			<element>#crop</element>
+			<element>#denoise</element>
+			<element>ConvertToYV12()</element>
+			<element>2Tweak (sat=1.1)</element>
+			<element>3Sharpen(0.0)</element>
+		</mp4>
+		
+		<mkv>
+			<element>LoadPlugin("%pluginsPath%\directshowsource.dll")</element>
+			<element>DirectShowSource("%videoPath%", fps=23.976, audio=false, convertfps=true).AssumeFPS(24000,1001)</element>
+			<element>#deinterlace</element>
+			<element>#crop</element>
+			<element>#denoise</element>
+			<element>ConvertToYV12()</element>
+			<element>2Tweak (sat=1.1)</element>
+			<element>3Sharpen(0.0)</element>
+		</mkv>
+	</videoConfig>
+	
+	<subtilesConfig>
+		<ass>
+			<element>LoadPlugin("%pluginsPath%\avisynth_plugin\VSFilter.dll")</element>
+			<element>TextSub("%subtilesPath%", 1)</element>
+		</ass>
+		
+		<str>
+			<element>LoadPlugin("%pluginsPath%\avisynth_plugin\VSFilter.dll")</element>
+			<element>TextSub("%subtilesPath%", 1)</element>
+		</str>
+	</subtilesConfig>
+</config>
