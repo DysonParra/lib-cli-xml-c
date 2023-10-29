@@ -78,7 +78,7 @@ BOOL APIENTRY DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved) {
 #endif
 
 /**
- * FIXME: Definición de {@code newXmlItem}.
+ * FIXME: Description of {@code newXmlItem}.
  * Crea un nuevo XmlItem y asociarlo a un XmlItem parámetro brother que dirá si es un hermano (diferente a 0), o un hijo (0).
  */
 LANGUAGE DLLIMPORT CALLING XmlItem* newXmlItem(char* name, char* value, int type, XmlItem* ref, int brother) {
@@ -154,7 +154,7 @@ LANGUAGE DLLIMPORT CALLING XmlItem* newXmlItem(char* name, char* value, int type
 }
 
 /**
- * FIXME: Definición de {@code deleteXmlItemChilds}.
+ * FIXME: Description of {@code deleteXmlItemChilds}.
  * Borra y libera la memoria de un XmlItem y todos sus descendientes.
  */
 LANGUAGE DLLIMPORT CALLING void deleteXmlItemChilds(XmlItem** toErase) {
@@ -188,7 +188,7 @@ LANGUAGE DLLIMPORT CALLING void deleteXmlItemChilds(XmlItem** toErase) {
 }
 
 /**
- * FIXME: Definición de {@code deleteXmlItem}.
+ * FIXME: Description of {@code deleteXmlItem}.
  * Borra y libera la memoria de un JsonItem y todos sus descendientes, y deja el json item apuntando a NULL.
  */
 LANGUAGE DLLIMPORT CALLING void deleteXmlItem(XmlItem** toErase) {
@@ -197,7 +197,7 @@ LANGUAGE DLLIMPORT CALLING void deleteXmlItem(XmlItem** toErase) {
 }
 
 /**
- * FIXME: Definición de {@code newXmlAttribute}.
+ * FIXME: Description of {@code newXmlAttribute}.
  * Crea un nuevo XmlAttribute y asociarlo a un XmlItem parámetro.
  */
 LANGUAGE DLLIMPORT CALLING XmlAttribute* newXmlAttribute(char* name, char* value, XmlItem* item) {
@@ -242,7 +242,7 @@ LANGUAGE DLLIMPORT CALLING XmlAttribute* newXmlAttribute(char* name, char* value
 }
 
 /**
- * FIXME: Definición de {@code deleteXmlAttribute}.
+ * FIXME: Description of {@code deleteXmlAttribute}.
  * Borra y libera la memoria de un XmlItem y todos sus descendientes.
  */
 LANGUAGE DLLIMPORT CALLING void deleteXmlAttribute(XmlAttribute** toErase) {
@@ -271,7 +271,7 @@ LANGUAGE DLLIMPORT CALLING void deleteXmlAttribute(XmlAttribute** toErase) {
 }
 
 /**
- * FIXME: Definición de {@code setXmlItemName}.
+ * FIXME: Description of {@code setXmlItemName}.
  * Cambia el campo name de un XmlItem por el de un array especificado.
  */
 LANGUAGE DLLIMPORT CALLING void setXmlItemName(XmlItem* aux, char* name) {
@@ -284,7 +284,7 @@ LANGUAGE DLLIMPORT CALLING void setXmlItemName(XmlItem* aux, char* name) {
 }
 
 /**
- * FIXME: Definición de {@code setXmlItemValue}.
+ * FIXME: Description of {@code setXmlItemValue}.
  * Cambia el campo value de un XmlItem por el de un array especificado.
  */
 LANGUAGE DLLIMPORT CALLING void setXmlItemValue(XmlItem* aux, char* value) {
@@ -296,7 +296,7 @@ LANGUAGE DLLIMPORT CALLING void setXmlItemValue(XmlItem* aux, char* value) {
 }
 
 /**
- * FIXME: Definición de {@code findXmlItem}.
+ * FIXME: Description of {@code findXmlItem}.
  * Encuentra un XmlItem en un XmlItem father.
  */
 LANGUAGE DLLIMPORT CALLING XmlItem* findXmlItem(XmlItem* father, int nargs, ...) {
@@ -342,7 +342,7 @@ LANGUAGE DLLIMPORT CALLING XmlItem* findXmlItem(XmlItem* father, int nargs, ...)
 }
 
 /**
- * FIXME: Definición de {@code findRoot}.
+ * FIXME: Description of {@code findRoot}.
  * Obtiene la raíz de un XmlItem.
  */
 CALLING XmlItem* findRoot(XmlItem* firstXmlItem) {
@@ -357,7 +357,7 @@ CALLING XmlItem* findRoot(XmlItem* firstXmlItem) {
 }
 
 /**
- * FIXME: Definición de {@code findMaxLevel}.
+ * FIXME: Description of {@code findMaxLevel}.
  * Obtiene la mayor profundidad de un XmlItem.
  */
 CALLING int findMaxLevel(XmlItem* firstXmlItem, int level) {
@@ -381,7 +381,7 @@ CALLING int findMaxLevel(XmlItem* firstXmlItem, int level) {
 }
 
 /**
- * FIXME: Definición de {@code printArray}.
+ * FIXME: Description of {@code printArray}.
  * Imprime un array sin los caracteres de escape.
  */
 CALLING void printArray(char* array) {
@@ -412,7 +412,7 @@ CALLING void printArray(char* array) {
 }
 
 /**
- * FIXME: Definición de {@code sprintArray}.
+ * FIXME: Description of {@code sprintArray}.
  * Copia un array de entrada en otro sin los caracteres de escape.
  */
 CALLING void sprintArray(char* output, char* input) {
@@ -443,7 +443,7 @@ CALLING void sprintArray(char* output, char* input) {
 }
 
 /**
- * FIXME: Definición de {@code printDebugAllXmlItems}.
+ * FIXME: Description of {@code printDebugAllXmlItems}.
  * Muestra un XmlItem, childs dice si imprime todos sus hijos y brother dice si imprime todos sus hermanos, tab1 indica la cantidad de tabulaciones antes de imprimir cada XmlItem.
  */
 CALLING void printDebugAllXmlItems(FILE* file, XmlItem* firstXmlItem, int childs, int brothers, int tab1, int tab2) {
@@ -577,7 +577,7 @@ CALLING void printDebugAllXmlItems(FILE* file, XmlItem* firstXmlItem, int childs
 }
 
 /**
- * FIXME: Definición de {@code printDebugXmlItem}.
+ * FIXME: Description of {@code printDebugXmlItem}.
  * Invoca al método que imprime los XmlItem en modo debug.
  */
 LANGUAGE DLLIMPORT CALLING void printDebugXmlItem(char* fileSource, char* openType, XmlItem* root, int childs) {
@@ -598,7 +598,7 @@ LANGUAGE DLLIMPORT CALLING void printDebugXmlItem(char* fileSource, char* openTy
 }
 
 /**
- * FIXME: Definición de {@code printAllXmlItems}.
+ * FIXME: Description of {@code printAllXmlItems}.
  * Muestra un XmlItem, childs dice si imprime todos sus hijos y brother dice si imprime todos sus hermanos, tab indica la cantidad de tabulaciones antes de imprimir cada XmlItem.
  */
 CALLING void printAllXmlItems(FILE* file, XmlItem* firstXmlItem, int childs, int brothers, int tab) {
@@ -720,7 +720,7 @@ CALLING void printAllXmlItems(FILE* file, XmlItem* firstXmlItem, int childs, int
 }
 
 /**
- * FIXME: Definición de {@code printXmlItem}.
+ * FIXME: Description of {@code printXmlItem}.
  * Invoca al método que imprime los XmlItem.
  */
 LANGUAGE DLLIMPORT CALLING void printXmlItem(char* fileSource, char* openType, XmlItem* root, int childs) {
@@ -737,7 +737,7 @@ LANGUAGE DLLIMPORT CALLING void printXmlItem(char* fileSource, char* openType, X
 }
 
 /**
- * FIXME: Definición de {@code printXmlFile}.
+ * FIXME: Description of {@code printXmlFile}.
  * Imprime un XmlItem con un archivo xml cargado.
  */
 LANGUAGE DLLIMPORT CALLING void printXmlFile(char* fileSource, char* openType, XmlItem* root) {
@@ -795,7 +795,7 @@ LANGUAGE DLLIMPORT CALLING void printXmlFile(char* fileSource, char* openType, X
 }
 
 /**
- * FIXME: Definición de {@code isLetter}.
+ * FIXME: Description of {@code isLetter}.
  * Evalúa si un caracter es una letra. Devuelve 1 caso afirmativo o caso contrario 0.
  */
 CALLING char isLetter(char c) {
@@ -806,7 +806,7 @@ CALLING char isLetter(char c) {
 }
 
 /**
- * FIXME: Definición de {@code isNumber}.
+ * FIXME: Description of {@code isNumber}.
  * Evalúa si un caracter es un número o un signo. Devuelve 1 caso afirmativo o caso contrario 0.
  */
 CALLING char isNumber(char c) {
@@ -817,7 +817,7 @@ CALLING char isNumber(char c) {
 }
 
 /**
- * FIXME: Definición de {@code nextWord}.
+ * FIXME: Description of {@code nextWord}.
  * Obtiene la siguiente palabra del archivo xml.
  */
 CALLING void nextWord(FILE* file, char* word) {
@@ -956,7 +956,7 @@ CALLING void nextWord(FILE* file, char* word) {
 }
 
 /**
- * FIXME: Definición de {@code obtainXmlItems}.
+ * FIXME: Description of {@code obtainXmlItems}.
  * Obtiene los XmlItem de un archivo, header indica un XmlItem donde irá el encabezado del xml, y body un XmlItem donde irá el cuerpo del archivo xml. (devuelve el último estado obtenido).
  */
 CALLING int obtainXmlItems(FILE* file, XmlItem* header, XmlItem* body, int status, char* word) {
@@ -1330,7 +1330,7 @@ CALLING int obtainXmlItems(FILE* file, XmlItem* header, XmlItem* body, int statu
 }
 
 /**
- * FIXME: Definición de {@code getXmlItems}.
+ * FIXME: Description of {@code getXmlItems}.
  * Crea XmlItem en base a un array con la ruta del archivo xml.
  */
 LANGUAGE DLLIMPORT CALLING XmlItem* getXmlItems(char* fileSource) {
