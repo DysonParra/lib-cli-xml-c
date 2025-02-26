@@ -309,7 +309,7 @@ LANGUAGE DLLIMPORT CALLING XmlItem* findXmlItem(XmlItem* father, int nargs, ...)
 
     va_end(ap);                                     // Finaliza la lista de parámetros.
 
-    // for (int i =0; i< nargs; i++)                // Recorre el array con los parámetros.
+    // for (int i = 0; i < nargs; i++)              // Recorre el array con los parámetros.
     //   printf("Arg %d = \"%s\"\n", i, params[i]); // Muestra el parámetro actual.
 
     XmlItem* aux = NULL;                            // Crea XmlItem para recorrer los hijos del XmlItem parámetro.
